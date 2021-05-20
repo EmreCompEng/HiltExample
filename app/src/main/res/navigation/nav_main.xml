@@ -7,12 +7,20 @@
 
     <fragment
         android:id="@+id/personelFragment"
-        android:name="com.emreergun.hiltexample.PersonelFragment"
+        android:name="com.emreergun.hiltexample.ui.main.personel.PersonelFragment"
         android:label="fragment_personel"
-        tools:layout="@layout/fragment_personel" />
+        tools:layout="@layout/fragment_personel" >
+        <action
+            android:id="@+id/action_personelFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
     <fragment
         android:id="@+id/postFragment"
-        android:name="com.emreergun.hiltexample.PostFragment"
+        android:name="com.emreergun.hiltexample.ui.main.post.PostFragment"
         android:label="fragment_post"
-        tools:layout="@layout/fragment_post" />
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_personelFragment"
+            app:destination="@id/personelFragment" />
+    </fragment>
 </navigation>

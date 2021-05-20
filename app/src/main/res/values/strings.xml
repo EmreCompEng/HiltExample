@@ -2,4 +2,6 @@
     <string name="app_name">HiltExample</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_post_fragment">Post Fragment</string>
+    <string name="str_personel_fragment">Personel Fragment</string>
 </resources>
