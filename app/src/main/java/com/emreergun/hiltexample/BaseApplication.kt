@@ -1,4 +1,4 @@
-package com.emreergun.hiltexample.ui
+package com.emreergun.hiltexample
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

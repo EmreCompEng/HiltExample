@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/personelFragment"
-        android:name="com.emreergun.hiltexample.ui.main.personel.PersonelFragment"
+        android:name="com.emreergun.hiltexample.ui.main.profile.ProfileFragment"
         android:label="fragment_personel"
-        tools:layout="@layout/fragment_personel" >
+        tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_personelFragment_to_postFragment"
             app:destination="@id/postFragment" />
