@@ -1,6 +1,7 @@
 package com.emreergun.hiltexample.di.modules
 
 import com.emreergun.hiltexample.network.AuthApi
+import com.emreergun.hiltexample.network.MainApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,6 +18,12 @@ object ApiModule {
     @Provides
     fun provideAuthApi(retrofit: Retrofit): AuthApi {
         return retrofit.create(AuthApi::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun provideMainApi(retrofit: Retrofit): MainApi {
+        return retrofit.create(MainApi::class.java)
     }
 
 
