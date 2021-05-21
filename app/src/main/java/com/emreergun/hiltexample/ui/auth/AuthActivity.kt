@@ -62,11 +62,11 @@ class AuthActivity : AppCompatActivity() {
                     AuthResource.AuthStatus.LOADING->{
                         Log.d(TAG, "subscribeObserver: Loading...")
                         showProgressBar(true)
-                        navigateMain()
                     }
                     AuthResource.AuthStatus.AUTHENTICATED->{
                         Log.d(TAG, "subscribeObserver: Authenticated :${it.data?.name}")
                         showProgressBar(false)
+                        navigateMain()
                     }
                     AuthResource.AuthStatus.ERROR->{
                         Log.d(TAG, "subscribeObserver: Error :${it.message}")

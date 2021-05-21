@@ -5,4 +5,5 @@
     <string name="str_post_fragment">Post Fragment</string>
     <string name="str_personel_fragment">Personel Fragment</string>
     <string name="str_user_id">User Id</string>
+    <string name="str_see_posts">See Posts</string>
 </resources>

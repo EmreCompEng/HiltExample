@@ -1,5 +1,6 @@
 package com.emreergun.hiltexample.ui.auth
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.emreergun.hiltexample.SessionManager
@@ -30,9 +31,11 @@ class AuthViewModel
             .subscribeOn(Schedulers.io())
             .subscribe(object : DisposableSingleObserver<User>() {
                 override fun onSuccess(user: User) {
+                    Log.d(TAG, "onSuccess: ")
                     sessionManager.getCachedUser().value=AuthResource.Success(user)
                 }
                 override fun onError(error: Throwable) {
+                    Log.d(TAG, "onError: ")
                     sessionManager.getCachedUser().value=AuthResource.Error(error.toString())
                 }
             })
